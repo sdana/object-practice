@@ -49,20 +49,21 @@ for (elements in campaignInfo) {
             textElement.innerHTML += campaignInfo.platformStatements[insideElements] + "<br><br>"
         }
     }
-    if (elements === "volunteers") {
+    else if (elements === "volunteers") {
         for (i = 0; i < campaignInfo.volunteers.length; i++){
             for (insideElements in campaignInfo.volunteers[i]) {
                 textElement.innerHTML += campaignInfo.volunteers[i][insideElements] + "<br><br>"
             }
         }
     }
-    if (elements === "imageGallery") {
+    else if (elements === "imageGallery") {
         for (insideElements in campaignInfo.imageGallery) {
             textElement.innerHTML += campaignInfo.imageGallery[insideElements] + "<br><br>"
         }
     }
     else {
-        console.log(elements)
+        console.log("elements", elements)
+        console.log("box elements", campaignInfo[elements])
         textElement.innerHTML += campaignInfo[elements] + "<br><br>"
     }
 }
