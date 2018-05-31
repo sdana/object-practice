@@ -30,17 +30,6 @@ function changeObjectState(keyPath, keyToChange, stateToChange) {
     keyPath[keyToChange] = stateToChange
 }
 
-// changeObjectState(campaignInfo, "congressionalDistrict" , "District 7")
-// console.log(campaignInfo.congressionalDistrict)
-
-// console.log(campaignInfo.platformStatements.taxes)
-// changeObjectState(campaignInfo.platformStatements, "taxes", "I hate taxes, tax nothing!")
-// console.log(campaignInfo["platformStatements"].taxes)
-
-// console.log(campaignInfo.volunteers[0].name)
-// changeObjectState(campaignInfo.volunteers[0], "name", "Stevie Nicks")
-// console.log(campaignInfo.volunteers[0].name)
-
 let mainArticleElement = document.createElement("article")
 let textElement = document.createElement("p")
 for (elements in campaignInfo) {
